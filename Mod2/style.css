@@ -1,9 +1,9 @@
-/*body {
+body {
     background-color: aquamarine;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flexbox;
 }
-*/
+
 #main {
     height: 80%;
     display: flex;

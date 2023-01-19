@@ -1,0 +1,22 @@
+body {
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+    background-color: white;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+ li {
+    padding: 15px;
+ }
+ li:hover {
+    background-color: black;
+    font-weight: bold;
+    color: aquamarine;
+ }
