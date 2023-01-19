@@ -1,2 +1,78 @@
 @charset "utf-8";
 /* CSS Document */
+body, html {
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+nav {
+	margin-bottom:0.1em;
+	font-family: 'Lato', sans-serif;
+	
+}
+nav ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	display:flex;
+}
+nav li { flex-grow: 2; }
+nav a {
+	display: block;
+	padding: 1em;
+	text-align: center;
+	text-decoration: none;
+	color: #000000;
+	border: solid 1px #424242;
+	transition: all 0.5s;
+	text-transform: uppercase;
+}
+nav a:hover {
+	background-color:#60b18f; }
+section {
+	display:flex;
+	margin-bottom:0.1em;	
+}
+article {
+	display:grid;
+    grid-template-columns: 25% 50% 25%;
+	grid-gap: 1rem;
+	padding: 1rem;
+}
+aside {
+    display: none;
+}
+
+@media (orientation: landscape) {
+    section {
+        grid-template-columns: 3fr 3fr 3fr;
+        grid-template-rows: auto;
+    }
+    aside {
+        grid-template-columns: 250px;
+        grid-template-rows: auto;
+    }
+    nav ul {
+        flex-direction: row;
+    }
+    a {
+        margin-right:0.5em;
+    }
+    }
+    @media (orientation: portrait) {
+    section {
+        grid-template-columns: 100px;
+        grid-template-rows: auto auto;
+    }
+    aside {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav a {
+        margin-bottom:0.3em;
+    }
+    }
